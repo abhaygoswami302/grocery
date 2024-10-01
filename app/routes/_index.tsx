@@ -1,5 +1,5 @@
 import { MetaFunction } from "@remix-run/node";
-import { Form } from "@remix-run/react";
+
 import { ChangeEvent, FormEvent, useState, useEffect } from "react";
 import { FilePenLine,Trash2  } from 'lucide-react';
 
@@ -113,7 +113,7 @@ export default function Index() {
         <div className=" text-3xl font-bold text-blue-600">
           {isEditing ? "Edit grocery item" : "Enter new grocery item"}
         </div>
-        <Form onSubmit={handleNewEntry} className="w-full flex gap-4 flex-col items-center">
+        <form onSubmit={handleNewEntry} className="w-full flex gap-4 flex-col items-center">
           <div className="flex gap-5 w-full">
             <div className=" w-full">
               <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -182,7 +182,7 @@ export default function Index() {
               {isEditing ? "Save Changes" : "Submit"}
             </button>
           </div>
-        </Form>
+        </form>
       </div>
 
      
