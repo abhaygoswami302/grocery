@@ -185,7 +185,7 @@ export default function Index() {
         </Form>
       </div>
 
-      {/* Display Grocery List */}
+     
       <div className="p-5">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <h2 className="w-full text-4xl font-bold">Grocery List</h2>
