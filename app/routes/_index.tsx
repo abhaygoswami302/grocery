@@ -1,7 +1,7 @@
 import { MetaFunction } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { ChangeEvent, FormEvent, useState, useEffect } from "react";
-import { FilePenLine,Trash2,Ellipsis  } from 'lucide-react';
+import { FilePenLine,Trash2  } from 'lucide-react';
 
 export const meta: MetaFunction = () => {
   return [
