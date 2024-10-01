@@ -1,7 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 
 import { ChangeEvent, FormEvent, useState, useEffect } from "react";
-import { FilePenLine,Trash2  } from 'lucide-react';
 
 export const meta: MetaFunction = () => {
   return [
@@ -178,8 +177,8 @@ export default function Index() {
           </div>
 
           <div className="w-full">
-            <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-sm px-5 py-2.5">
-              {isEditing ? "Save Changes" : "Submit"}
+            <button type="submit" aria-label="Submit" className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-sm px-5 py-2.5">
+              Submit
             </button>
           </div>
         </form>
@@ -213,13 +212,13 @@ export default function Index() {
                     <td className="px-6 py-4">{item.note}</td>
                     <td className="px-6 py-4">{item.status}</td>
                     <td className="px-6 py-4">
-                      <button onClick={() => handleEdit(item.id)} className="font-medium text-blue-600 hover:text-blue-800">
-                        <FilePenLine />
+                      <button aria-label={"Edit"} onClick={() => handleEdit(item.id)} className="font-medium text-blue-600 hover:text-blue-800">
+                        Edit
                       </button>
                     </td>
                     <td className="px-6 py-4">
-                      <button onClick={() => handleDelete(item.id)} className="font-medium text-red-600 hover:hover:text-red-800">
-                      <Trash2 />
+                      <button aria-label={"Delete"}  onClick={() => handleDelete(item.id)} className="font-medium text-red-600 hover:hover:text-red-800">
+                      Delete
                       </button>
                     </td>
                   </tr>
