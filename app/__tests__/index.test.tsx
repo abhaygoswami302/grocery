@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Index from '../routes/_index';
 
 describe('Grocery Store App', () => {
+  localStorage.clear();
   beforeEach(() => {
     render(<Index />);
   });
