@@ -1,6 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Index from '../routes/_index';
 
+
+// test code 
 describe('Grocery Store App', () => {
   
   beforeEach(() => {
